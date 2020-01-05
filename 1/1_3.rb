@@ -1,4 +1,7 @@
-print 'Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.'
-  .scan(/\w+/).map(&:length)
+class First
+  def self.word_length(words)
+    words.scan(/\w+/).map(&:length)
+  end
+end
 
-puts
+p First.word_length('Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.')
